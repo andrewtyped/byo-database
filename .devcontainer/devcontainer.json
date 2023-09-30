@@ -1,0 +1,27 @@
+{
+    "name": "Go",
+    "image": "mcr.microsoft.com/devcontainers/go:0-1.19-bullseye",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    },
+
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [9000]
+
+    "portsAttributes": {
+        "9000": {
+            "label": "Application",
+            "onAutoForward": "notify"
+        }
+    },
+
+    // User 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "go version"
+
+    //"remoteUser": "root'
+}
