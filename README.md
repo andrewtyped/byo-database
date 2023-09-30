@@ -1,0 +1,1 @@
+This repo contains the implementation of a minimal database, as described in the book "Build Your Own Database" - https://build-your-own.org/database.
